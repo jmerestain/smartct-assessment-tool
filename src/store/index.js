@@ -5,6 +5,8 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
+    answers: [],
+    results: [],
   },
   mutations: {
   },
