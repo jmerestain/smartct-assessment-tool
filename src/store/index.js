@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     answers: [],
     results: [],
+    points: 0,
   },
   mutations: {
   },

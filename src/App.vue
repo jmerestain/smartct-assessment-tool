@@ -36,6 +36,9 @@ html, body, #app {
 .border-primary {
   border-color: #ff5039;
 }
+.border-secondary {
+  border-color: #87c540;
+}
 .bg-secondary {
   background: #87c540;
 }

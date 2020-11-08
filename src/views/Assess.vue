@@ -3,15 +3,15 @@
         <div v-if="!loading" class="container py-10 mx-auto px-5 md:px-20 flex flex-col">
             <div  id="quiz" class="flex flex-col max-w-4xl w-full mx-auto">
                 <h2 class="text-4xl font-medium tracking-wide pb-2 border-b-2">
-                    {{ qList[index].theme }}
+                    {{ `${index+1}/11 ${qList[index].theme}` }}
                 </h2>
                 <div v-for="(q, qIndex) in qList[index].questions"
-                class="flex flex-col mt-4" :key="qIndex">
+                class="flex flex-col mt-4 border-2 border-orange-600 p-4" :key="qIndex">
                   <p class="text-2xl tracking-wide py-4 h-64">
                       {{ q }}
                   </p>
                   <div class="flex justify-center items-center
-                  space-x-10 py-4 pb-10 border-b-2 border-orange-500">
+                  space-x-10 py-4 pb-10 mt-6">
                       <div class="items-center align-center">
                           <input class="radio-button true" type="radio"
                           :id="`true${qIndex}`" :name="`assessment${qIndex}`" value=true>
@@ -225,6 +225,7 @@ export default {
       answers.forEach((answer) => {
         if (answer.checked) {
           prelim += 1;
+          this.$store.state.points += 1;
         }
       });
       this.$store.state.results.push(prelim);
