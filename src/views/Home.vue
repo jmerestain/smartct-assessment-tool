@@ -2,10 +2,11 @@
   <div class="home flex-grow flex flex-col">
     <section class="flex-grow py-16 bg-white text-gray-900">
       <div class="container mx-auto px-5 md:px-20">
-        <p class="text-4xl font-medium tracking-wider text-gray-800">
+        <p class="text-4xl font-medium tracking-wider text-gray-800 pb-4
+        md:text-left text-center">
           Map your way to smartness success
         </p>
-        <p class="text-opacity-75 text-gray-800 text-xl">
+        <p class="text-opacity-75 text-gray-800 text-xl text-center md:text-left">
           This assessment is designed as a questionnaire. It has 10 questions for each dimension.
           The result is an indication of the success of the community’s initiatives to date.
         </p>

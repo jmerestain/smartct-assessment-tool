@@ -7,14 +7,14 @@ export default {
   data() {
     return {
       chartdata: {
-        labels: ['LGU Strategy', 'Localizing Climate Change and Sustainability ', 'Stakeholder Engagement & Communication', 'Operating Model & Service Delivery', 'Physical Asset Management', 'Data Strategy', 'Access to Data', 'ICT Plan', 'Standards', 'Innovation Ecosystem', 'Performance management'],
+        labels: ['LS', 'LCCS', 'SEC', 'OMSD', 'PAS', 'DS', 'ATD', 'IP', 'STD', 'IE', 'PM'],
         datasets: [
           {
             label: 'SmartCT LGU Assessment Score',
             backgroundColor: '#87c540',
-            color: '#87c540',
             circular: true,
             data: this.$store.state.results,
+            lineTension: 1,
           },
         ],
       },

@@ -1,10 +1,17 @@
 <template>
   <div class="about">
-    <div class="flex justify-between items-center container mx-auto px-5 md:px-20">
-      <Radar class="w-1/3"/>
-      <div class="flex flex-col text-center w-1/3">
-        <h1 class="text-4xl">Points</h1>
-        <h1 class="text-4xl">{{ this.$store.state.points }}</h1>
+    <div class="flex justify-center lg:justify-between items-center
+    container mx-auto px-5 md:px-20 flex-wrap">
+      <div class="flex flex-col text-center flex-grow">
+        <div class="flex flex-col text-center">
+          <h1 class="text-4xl uppercase">Points</h1>
+          <h1 class="text-4xl">{{ this.$store.state.points }}</h1>
+        </div>
+        <div class="">
+        </div>
+      </div>
+      <div class="">
+        <Radar class="p-10" />
       </div>
     </div>
     <router-link to="/"
