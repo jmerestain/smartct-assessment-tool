@@ -24,6 +24,12 @@
                           <label :for="`false${qIndex}`"
                           class="text-xl font-medium select-none">No</label>
                       </div>
+                      <div class="items-center align-center">
+                          <input class="radio-button false" type="radio"
+                          :id="`false${qIndex}`" :name="`assessment${qIndex}`" value=false>
+                          <label :for="`false${qIndex}`"
+                          class="text-xl font-medium select-none">Unsure</label>
+                      </div>
                   </div>
                 </div>
             </div>

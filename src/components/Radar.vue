@@ -7,14 +7,13 @@ export default {
   data() {
     return {
       chartdata: {
-        labels: ['LS', 'LCCS', 'SEC', 'OMSD', 'PAS', 'DS', 'ATD', 'IP', 'STD', 'IE', 'PM'],
+        labels: ['LS', 'LCCS', 'SEC', 'OMSD', 'PAM', 'DS', 'ATD', 'IP', 'STD', 'IE', 'PM'],
         datasets: [
           {
             label: 'SmartCT LGU Assessment Score',
-            backgroundColor: '#87c540',
+            backgroundColor: 'rgba(135, 197, 64, 0.6)',
             circular: true,
             data: this.$store.state.results,
-            lineTension: 1,
           },
         ],
       },
