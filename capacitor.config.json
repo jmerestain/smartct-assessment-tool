@@ -1,0 +1,13 @@
+{
+  "appId": "com.smartct.assessment",
+  "appName": "SmartCT Assessment Tool",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

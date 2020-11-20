@@ -4,7 +4,7 @@
     container mx-auto px-5 md:px-20 flex-wrap">
       <div class="flex flex-col text-center flex-grow gap-4">
         <div class="flex flex-col text-center my-5">
-          <h1 class="text-2xl uppercase font-medium">SmartCT LGU Assessment Score Total</h1>
+          <h1 class="text-2xl font-medium tracking-wider">SmartCT LGU Assessment Score Total</h1>
           <h1 class="text-5xl">{{ this.$store.state.points }}/110</h1>
         </div>
         <div class="flex flex-col">

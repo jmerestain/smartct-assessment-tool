@@ -226,7 +226,23 @@ export default {
   },
   methods: {
     nextQuestion() {
+      const radios = document.getElementsByClassName('radio-button');
       const answers = document.getElementsByClassName('true');
+      for (let i = 0; i <= 11; i += 1) {
+        const nameString = `assessment${i}`;
+        const group = document.getElementsByName(nameString);
+        let unanswered = 0;
+        group.forEach((item) => {
+          if (!item.checked) {
+            unanswered += 1;
+          }
+        });
+        if (unanswered > 2) {
+          // eslint-disable-next-line no-alert
+          alert('Please answer all items to continue to the next area');
+          return;
+        }
+      }
       let prelim = 0;
       answers.forEach((answer) => {
         if (answer.checked) {
@@ -235,7 +251,6 @@ export default {
         }
       });
       this.$store.state.results.push(prelim);
-      const radios = document.getElementsByClassName('radio-button');
       radios.forEach((radio) => {
         // eslint-disable-next-line no-param-reassign
         radio.checked = false;
