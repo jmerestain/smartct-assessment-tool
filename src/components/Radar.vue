@@ -20,6 +20,12 @@ export default {
       options: {
         responsive: true,
         maintainAspectRatio: false,
+        scale: {
+          ticks: {
+            beginAtZero: true,
+            max: 10,
+          },
+        },
       },
     };
   },
